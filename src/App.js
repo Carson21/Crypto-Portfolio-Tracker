@@ -15,19 +15,17 @@ const App = () => {
     }
   }, [])
 
-  const addCoin = (coin) => {
-    console.log([...coins, coin])
-    setCoins([...coins, coin])
-    localStorage.setItem('coins', JSON.stringify(coins))
+  const changeCoin = (coin) => {
+    // console.log([...coins, coin])
+    // setCoins([...coins, coin])
+    // localStorage.setItem('coins', JSON.stringify(coins))
   }
 
-  const setCoin = (coin) => {}
-
   return (
-    <div className='w-9/10 h-screen mx-auto p-12'>
-      <div className='flex h-full flex-row justify-around gap-6 p-6 flex-nowrap border-red-500 border'>
+    <div className='w-9/10 h-screen mx-auto p-12' style={{ backgroundColor: '#fafafa' }}>
+      <div className='flex h-full flex-row justify-around gap-6 p-6 flex-nowrap'>
         <Overview coins={coins} />
-        <Transactions coins={coins} addCoin={addCoin} setCoin={setCoin} />
+        <Transactions coins={coins} changeCoin={changeCoin} />
       </div>
     </div>
   )

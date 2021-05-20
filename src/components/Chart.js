@@ -1,7 +1,7 @@
 const Chart = () => {
   return (
     <div className='p-4'>
-      <p>Chart Area</p>
+      <h2 className='text-2xl text-center font-bold mt-4'>Chart</h2>
     </div>
   )
 }
