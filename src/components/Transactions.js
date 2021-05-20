@@ -49,7 +49,7 @@ const Transactions = ({ changeCoin }) => {
     <div className='p-4 w-1/3 bg-white rounded-xl shadow-xl flex flex-col align-center'>
       <h2 className='text-2xl text-center font-bold mt-4'>Transactions</h2>
       <h4 className='my-4 text-lg font-semibold'>Select a Coin:</h4>
-      <Select options={geckoCoins} onChange={handleChooseCoin} className='shadow' />
+      <Select options={geckoCoins} onChange={handleChooseCoin} className='shadow-sm' />
       <h4 className='my-4 text-lg font-semibold'>Was this a buy or a sell?:</h4>
       <Select
         options={[
@@ -59,11 +59,7 @@ const Transactions = ({ changeCoin }) => {
         onChange={handleChooseTransType}
         className='shadow-sm'
       />
-      <button
-        ref={submitButton}
-        onClick={handleSubmit}
-        className='self-center font-semibold my-6 bg-blue-500 w-20 h-12 rounded-lg hover:bg-blue-600 focus:outline-none focus:ring-4 focus:ring-blue-300 focus:ring-opacity-100 transition duration-150 ease-out'
-      >
+      <button ref={submitButton} onClick={handleSubmit} className='btn-blue'>
         <p className='text-white'>Submit</p>
       </button>
     </div>
