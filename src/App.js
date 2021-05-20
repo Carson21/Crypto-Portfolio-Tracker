@@ -22,10 +22,12 @@ const App = () => {
   }
 
   return (
-    <div className='w-9/10 h-screen mx-auto p-12' style={{ backgroundColor: '#fafafa' }}>
-      <div className='flex h-full flex-row justify-around gap-6 p-6 flex-nowrap'>
-        <Overview coins={coins} />
-        <Transactions coins={coins} changeCoin={changeCoin} />
+    <div className='w-full h-full sm:h-screen bg-gray-100'>
+      <div className='container mx-auto py-6 sm:py-12 h-full'>
+        <div className='h-full px-4 sm:px-0 grid sm:grid-cols-3 sm:grid-rows-1 grid-cols-1 grid-rows-3 gap-4'>
+          <Overview coins={coins} />
+          <Transactions coins={coins} changeCoin={changeCoin} />
+        </div>
       </div>
     </div>
   )

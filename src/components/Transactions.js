@@ -46,7 +46,7 @@ const Transactions = ({ changeCoin }) => {
   }
 
   return (
-    <div className='p-4 w-1/3 bg-white rounded-xl shadow-xl flex flex-col align-center'>
+    <div className='p-4 col-span-1 row-span-1 bg-white rounded-xl shadow-xl flex flex-col align-center'>
       <h2 className='text-2xl text-center font-bold mt-4'>Transactions</h2>
       <h4 className='my-4 text-lg font-semibold'>Select a Coin:</h4>
       <Select options={geckoCoins} onChange={handleChooseCoin} className='shadow-sm' />
