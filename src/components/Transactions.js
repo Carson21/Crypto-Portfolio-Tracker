@@ -18,22 +18,22 @@ const Transactions = ({ changeCoin }) => {
       .then((data) => {
         setGeckoCoins(
           data.map((coin) => {
-            return { value: coin.symbol, label: capatilize(coin.id) }
+            return { value: coin.symbol, label: coin.id }
           })
         )
       })
   }, [])
 
-  const capatilize = (str) => {
-    let split = str.split('-')
-    split = split.map((word) => {
-      return word.charAt(0).toUpperCase() + word.slice(1)
-    })
-    return split.join(' ')
-  }
+  // const capatilize = (str) => {
+  //   let split = str.split('-')
+  //   split = split.map((word) => {
+  //     return word.charAt(0).toUpperCase() + word.slice(1)
+  //   })
+  //   return split.join(' ')
+  // }
 
   const handleChooseCoin = (coin) => {
-    setSelectedCoin(coin.value)
+    setSelectedCoin(coin.label)
   }
 
   const handleChooseTransType = (trans) => {
@@ -52,6 +52,7 @@ const Transactions = ({ changeCoin }) => {
     submitButton.current.blur()
     if (selectedCoin && selectedTransType && amountOfCoins && costOfCoins) {
       console.log(selectedCoin + ' ' + selectedTransType + ' ' + amountOfCoins + ' ' + costOfCoins)
+      changeCoin(selectedCoin, selectedTransType, amountOfCoins, costOfCoins)
     }
   }
 
@@ -69,7 +70,7 @@ const Transactions = ({ changeCoin }) => {
         onChange={handleChooseTransType}
         className='shadow-sm'
       />
-      <h4 className='form-label'>How many coins did you buy?</h4>
+      <h4 className='form-label'>How many coins did you transact?</h4>
       <input
         type='number'
         className='number-input'
