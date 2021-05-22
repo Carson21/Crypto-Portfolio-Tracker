@@ -1,6 +1,6 @@
 # Crypto-Portfolio-Tracker
 
-Available at [https://carson21.github.io/Crypto-Portfolio-Tracker/]
+Available at https://carson21.github.io/Crypto-Portfolio-Tracker/
 
 Tracks your cryptocurrency portfolio
 
