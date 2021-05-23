@@ -8,11 +8,11 @@ const CoinSummary = ({ coin }) => {
   }
 
   return (
-    <div className='flex items-center text-center justify-between p-4 my-2 w-full h-16 shadow-sm border-gray-300 border rounded'>
+    <div className='flex items-center h-16 text-center divide-solid divide-gray-400 divide-x-2 justify-between p-4 my-2 w-full shadow-sm border-gray-300 border rounded'>
       <h2 className='w-1/4 text-lg font-semibold text-blue-600'>{capatilize(coin.id)}</h2>
-      <h2 className='w-1/4 text-lg font-semibold'>{coin.amount} coins</h2>
-      <h2 className='w-1/4 text-lg font-semibold'>${coin.totalCost}</h2>
-      <h2 className='w-1/4 text-lg font-semibold'>${coin.realizedGains}</h2>
+      <h2 className='w-1/4 text-lg font-semibold m-2'>{coin.amount} coins</h2>
+      <h2 className='w-1/4 text-lg font-semibold'>${coin.totalCost.toFixed(2)}</h2>
+      <h2 className='w-1/4 text-lg font-semibold'>${coin.realizedGains.toFixed(2)}</h2>
     </div>
   )
 }
