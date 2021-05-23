@@ -4,12 +4,12 @@ const Holdings = ({ coins }) => {
   return (
     <div className='h-full p-4 flex flex-col justify-evenly gap-6'>
       <h2 className='text-2xl text-center font-bold mt-2'>Holdings</h2>
-      <div className='flex justify-evenly gap-8'>
-        <h2 className='text-xl font-sans font-semi-bold text-gray-700'>Coin Name:</h2>
-        <h2 className='text-xl font-sans font-semi-bold text-gray-700'>Amount of Coins:</h2>
-        <h2 className='text-xl font-sans font-semi-bold text-gray-700'>Average Cost of Coins:</h2>
-        <h2 className='text-xl font-sans font-semi-bold text-gray-700'>Total Cost:</h2>
-        <h2 className='text-xl font-sans font-semi-bold text-gray-700'>Realized Gains:</h2>
+      <div className='flex justify-evenly text-center mr-4 gap-1'>
+        <h2 className='text-xl w-1/5 font-sans font-semi-bold text-gray-700'>Coin Name:</h2>
+        <h2 className='text-xl w-1/5 font-sans font-semi-bold text-gray-700'>Amount of Coins:</h2>
+        <h2 className='text-xl w-1/5 font-sans font-semi-bold text-gray-700'>Average Cost:</h2>
+        <h2 className='text-xl w-1/5 font-sans font-semi-bold text-gray-700'>Total Cost:</h2>
+        <h2 className='text-xl w-1/5 font-sans font-semi-bold text-gray-700'>Realized Gains:</h2>
       </div>
       <div className='overflow-auto mb-2 px-2'>
         {coins &&
