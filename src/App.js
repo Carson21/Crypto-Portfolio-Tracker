@@ -22,7 +22,7 @@ const App = () => {
     cost = parseFloat(cost)
 
     let index = coins.findIndex((coin) => {
-      if (coin.id === coin_id) {
+      if (coin.name === coin_id) {
         return true
       } else {
         return false
@@ -31,7 +31,7 @@ const App = () => {
 
     if (trans === 'buy') {
       if (index === -1) {
-        editCoin.id = coin_id
+        editCoin.name = coin_id
         editCoin.cost = cost
         editCoin.amount = amount
         editCoin.totalCost = cost * amount

@@ -18,19 +18,11 @@ const Transactions = ({ changeCoin }) => {
       .then((data) => {
         setGeckoCoins(
           data.map((coin) => {
-            return { value: coin.symbol, label: coin.id }
+            return { value: coin.id, label: coin.name }
           })
         )
       })
   }, [])
-
-  // const capatilize = (str) => {
-  //   let split = str.split('-')
-  //   split = split.map((word) => {
-  //     return word.charAt(0).toUpperCase() + word.slice(1)
-  //   })
-  //   return split.join(' ')
-  // }
 
   const handleChooseCoin = (coin) => {
     setSelectedCoin(coin.label)
