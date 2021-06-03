@@ -3,13 +3,12 @@ import Transactions from './components/Transactions'
 import React, { useState, useEffect } from 'react'
 
 const App = () => {
-  const [coins, setCoins] = useState()
+  const [coins, setCoins] = useState([])
 
   useEffect(() => {
     let saved = JSON.parse(localStorage.getItem('coins'))
     if (saved == null) {
       localStorage.setItem('coins', JSON.stringify([]))
-      setCoins([])
     } else {
       setCoins(saved)
     }

@@ -4,7 +4,7 @@
 @tailwind utilities;
 
 .btn-blue {
-  @apply self-center font-semibold my-6 bg-blue-500 w-20 h-12 rounded-lg hover:bg-blue-600 focus:outline-none focus:ring-4 focus:ring-blue-300 focus:ring-opacity-100 transition duration-150 ease-out;
+  @apply self-center flex-shrink-0 font-semibold my-6 bg-blue-500 w-20 h-12 rounded-lg hover:bg-blue-600 focus:outline-none focus:ring-4 focus:ring-blue-300 focus:ring-opacity-100 transition duration-150 ease-out;
 }
 
 .form-label {
