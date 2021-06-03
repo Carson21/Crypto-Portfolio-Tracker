@@ -1,20 +1,20 @@
 {
   "files": {
-    "main.css": "/Crypto-Portfolio-Tracker/static/css/main.4abac758.chunk.css",
-    "main.js": "/Crypto-Portfolio-Tracker/static/js/main.754a7ce9.chunk.js",
-    "main.js.map": "/Crypto-Portfolio-Tracker/static/js/main.754a7ce9.chunk.js.map",
+    "main.css": "/Crypto-Portfolio-Tracker/static/css/main.61c9f493.chunk.css",
+    "main.js": "/Crypto-Portfolio-Tracker/static/js/main.8df5d56b.chunk.js",
+    "main.js.map": "/Crypto-Portfolio-Tracker/static/js/main.8df5d56b.chunk.js.map",
     "runtime-main.js": "/Crypto-Portfolio-Tracker/static/js/runtime-main.e6ed61e3.js",
     "runtime-main.js.map": "/Crypto-Portfolio-Tracker/static/js/runtime-main.e6ed61e3.js.map",
     "static/js/2.03c2ca8e.chunk.js": "/Crypto-Portfolio-Tracker/static/js/2.03c2ca8e.chunk.js",
     "static/js/2.03c2ca8e.chunk.js.map": "/Crypto-Portfolio-Tracker/static/js/2.03c2ca8e.chunk.js.map",
     "index.html": "/Crypto-Portfolio-Tracker/index.html",
-    "static/css/main.4abac758.chunk.css.map": "/Crypto-Portfolio-Tracker/static/css/main.4abac758.chunk.css.map",
+    "static/css/main.61c9f493.chunk.css.map": "/Crypto-Portfolio-Tracker/static/css/main.61c9f493.chunk.css.map",
     "static/js/2.03c2ca8e.chunk.js.LICENSE.txt": "/Crypto-Portfolio-Tracker/static/js/2.03c2ca8e.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.e6ed61e3.js",
     "static/js/2.03c2ca8e.chunk.js",
-    "static/css/main.4abac758.chunk.css",
-    "static/js/main.754a7ce9.chunk.js"
+    "static/css/main.61c9f493.chunk.css",
+    "static/js/main.8df5d56b.chunk.js"
   ]
 }
