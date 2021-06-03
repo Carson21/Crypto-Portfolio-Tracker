@@ -2,9 +2,9 @@ import CoinSummary from './CoinSummary'
 
 const Holdings = ({ coins }) => {
   return (
-    <div className='xl:h-full h-1/2 w-full xl:w-1/2 p-4 flex-col align-center gap-6 bg-white rounded-xl shadow-xl'>
-      <h2 className='text-2xl text-center font-bold my-6'>Holdings</h2>
-      <div className='flex justify-evenly text-center gap-1 my-4'>
+    <div className='h-full p-4 flex flex-col justify-evenly gap-6'>
+      <h2 className='text-2xl text-center font-bold mt-2'>Holdings</h2>
+      <div className='flex justify-evenly text-center mr-4 gap-1'>
         <h2 className='text-xl w-1/5 font-sans font-semi-bold text-gray-700'>Coin Name:</h2>
         <h2 className='text-xl w-1/5 font-sans font-semi-bold text-gray-700'>Amount of Coins:</h2>
         <h2 className='text-xl w-1/5 font-sans font-semi-bold text-gray-700'>Average Cost:</h2>
