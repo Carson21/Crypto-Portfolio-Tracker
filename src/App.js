@@ -1,4 +1,4 @@
-import Overview from './components/Overview'
+import Holdings from './components/Holdings'
 import Transactions from './components/Transactions'
 import React, { useState, useEffect } from 'react'
 
@@ -79,10 +79,10 @@ const App = () => {
   }
 
   return (
-    <div className='w-full h-full sm:h-screen bg-gray-100'>
+    <div className='w-full h-full xl:h-screen bg-gray-100'>
       <div className='container mx-auto py-6 sm:py-12 h-full'>
-        <div className='h-full px-4 sm:px-0 grid sm:grid-cols-3 sm:grid-rows-1 grid-cols-1 grid-rows-3 gap-4'>
-          <Overview coins={coins} />
+        <div className='h-full px-4 flex flex-col xl:flex-row gap-4 justify-evenly'>
+          <Holdings coins={coins} />
           <Transactions changeCoin={changeCoin} />
         </div>
       </div>
